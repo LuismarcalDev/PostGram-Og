@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons"
+
 import { faHeart } from "@fortawesome/free-regular-svg-icons"
 
 export default function Feed(){

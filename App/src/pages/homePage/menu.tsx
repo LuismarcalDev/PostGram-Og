@@ -21,8 +21,13 @@ export default function Menu(){
                           <a className="flex flex-row items-center gap-3 cursor-pointer hover:text-[#ffffff] transition-500ms">
                           <FontAwesomeIcon icon={faUser} />  Sua Conta
                           </a>
+
+                         
       
                           </div>
+                           <button className="bg-[#3745b5] rounded-sm font-medium cursor-pointer text-[15px] p-2 hover:bg-[#253294] transition-500ms">
+                            Criar Postagem
+                          </button>
                       </div>
     )
 }
