@@ -4,7 +4,7 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons"
 
 export default function Menu(){
     return(
-       <div className="w-[15%] h-screen border-r border-[#47474769] text-white p-5  pt-10 flex flex-col  gap-10">
+       <div className="w-[20%] h-screen border-r border-[#47474769] text-white p-5  pt-10 flex flex-col  gap-10">
                           <h1 className="font-semibold text-[25px]">
                               PostGram
                           </h1>
