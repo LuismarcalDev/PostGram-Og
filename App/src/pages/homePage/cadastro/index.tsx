@@ -1,42 +1,50 @@
-import logo from "../../assets/login/logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import logo from "../../../assets/login/logo.png"
 
-export default function Login() {
-
+export default function Cadastro() {
   return (
-
     <div className="w-full h-screen bg-[#0c1014] justify-center items-center flex flex-col">
-    <div className=" w-[950px] flex flex-row items-center gap-10  p-5">
+      <div className="w-[950px] flex flex-row items-center gap-10 p-5">
         <img src={logo} alt="" />
 
         <div className="w-full flex flex-col gap-5 items-center">
-
           <h2 className="font-semibold text-white text-[30px]">PostGram</h2>
 
-          <div className="flex flex-col gap-5 text-white w-full">
+          <div className="flex flex-col gap-5 text-white w-full"> 
+            <input
+              type="text"
+              placeholder="Crie um nome de usuario"
+              className="w-full border p-2 rounded-[7px] outline-none border-[#ffffff34]"
+            />
+
+            <input
+              type="text"
+              placeholder="informe seu nome completo"
+              className="w-full border p-2 rounded-[7px] outline-none border-[#ffffff34]"
+            />
 
             <input
               type="text"
               placeholder="informe seu email"
-              className=" w-full border p-2 rounded-[7px] outline-none border-[#ffffff34]"
+              className="w-full border p-2 rounded-[7px] outline-none border-[#ffffff34]"
             />
 
             <input
-              type="text"
-              placeholder="informe sua senha"
-              className=" w-full border p-2 rounded-[7px] outline-none border-[#ffffff34]"
+              type="password"
+              placeholder="informe uma senha"
+              className="w-full border p-2 rounded-[7px] outline-none border-[#ffffff34]"
             />
-
+            
             <button className="w-full p-2 bg-[#3745b5] rounded-[5px] cursor-pointer hover:bg-[#2e3b9e] transition-[500ms]">
-              Fazer Login
+              Fazer Cadastro
             </button>
 
-            <p>Não tem uma conta?{" "}
-              <Link to="/cadastro" className="text-[#4457e4]">
-                Fazer Cadastro
+            <p>
+              Já tem uma conta?{" "}
+              <Link to="/" className="text-[#4457e4]">
+                Fazer Login
               </Link>
             </p>
-
           </div>
         </div>
       </div>
@@ -85,5 +93,5 @@ export default function Login() {
         </a>
       </div>
     </div>
-  );
+  )
 }
